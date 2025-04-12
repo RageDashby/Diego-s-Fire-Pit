@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Diego's Fire Pit</title>
+    <link rel="stylesheet" href="CSS/estilos.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Limelight&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/svg+xml" href="Imagenes/Llama.svg">
+  </head>
+  <body>
+    <!--Header/Parte Superior-->
+    <div id="Superior">
+      <header>
+        <a href="index.html">
+            <img
+            src="Imagenes/Logo[Recuperado].svg"
+            alt="Logotipo"
+            class="logotipo"
+          />   
+        </a>  
+      </header>
+      <!--Menu desplegable nav-->
+      <nav class="navbar">
+        <button class="menu-toggle" id="menu-toggle">☰</button>
+        <ul class="nav-links" id="nav-links">
+          <li><img src="Imagenes/Llama.svg" alt="" class="icon"><a href="reservaciones.html">Reservaciones</a><img src="Imagenes/Llama.svg" alt="" class="icon"></li>
+          <li><img src="Imagenes/Llama.svg" alt="" class="icon"><a href="ubicaciones.html">Ubicaciones</a><img src="Imagenes/Llama.svg" alt="" class="icon"></li>
+          <li><img src="Imagenes/Llama.svg" alt="" class="icon"><a href="sobrenosotros.html">Sobre Nosotros</a><img src="Imagenes/Llama.svg" alt="" class="icon"></li>
+        </ul>
+      </nav>
+    </div>
+    <!--Cuerpo principal del index-->
+    <main>
+      <picture id="gif">
+        <img src="Imagenes/Corte1.gif" alt="Corte de carne animado">
+        <p id="textBanner">Sean bienvenidos a Diego’s Fire Pit</p>
+      </picture>
+
+      <section id="bien">
+        <p>La experiencia definitiva cuando se habla de cortes de carne de la más
+          alta calidad. De un gran tamaño, jugosos y de un alto cellado al carbon
+          con las mejores especias importadas.</p>
+      </section>
+
+      <div class="menu-container">
+        <div class="menu-controls">
+          <button class="menu-btn active" onclick="cambioDeMenu('Cortes')">Cortes</button>
+          <button class="menu-btn" onclick="cambioDeMenu('Bebidas')">Bebidas</button>
+          <button class="menu-btn" onclick="cambioDeMenu('Postres')">Postres</button>
+        </div>
+
+        <!-- Cortes -->
+        <section id="Cortes" class="menu-section active-section">
+          <article class="menu-item">
+            <h3>T-Bone Prime</h3>
+            <img src="Imagenes/T Bone.png" alt="T-Bone" class="comida">
+            <p>Corte premium USDA Prime 800gr<br>
+              <span class="precio">$1,850 MXN</span></p>
+          </article>
+          <article class="menu-item">
+            <h3>Rib-Eye Wagyu</h3>
+            <img src="Imagenes/Rib Eye.png" alt="Rib-Eye" class="comida">
+            <p>Certificación A5 Miyazaki 450gr<br>
+              <span class="precio">$3,200 MXN</span></p>
+          </article>
+          <article class="menu-item">
+            <h3>Rollo de Carne</h3>
+            <img src="Imagenes/Rollo de Carne.png" alt="Rollo" class="comida">
+            <p>Filete envuelto en tocino ahumado 600gr<br>
+              <span class="precio">$1,450 MXN</span></p>
+          </article>
+        </section>
+
+        <!-- Bebidas -->
+        <section id="Bebidas" class="menu-section">
+          <article class="menu-item">
+            <h3>Margarita Clásica</h3>
+            <img src="Imagenes/Margarita.png" alt="Margarita" class="comida">
+            <p>Tequila Don Julio 1942, Cointreau y lima fresca<br>
+              <span class="precio">$380 MXN</span></p>
+          </article>
+          <article class="menu-item">
+            <h3>Limonada Premium</h3>
+            <img src="Imagenes/Limonada.png" alt="Limonada" class="comida">
+            <p>Hecha con cítricos orgánicos y miel de agave<br>
+              <span class="precio">$220 MXN</span></p>
+          </article>
+          <article class="menu-item">
+            <h3>Cerveza Artesanal</h3>
+            <img src="Imagenes/Cerveza.png" alt="Cerveza" class="comida">
+            <p>Selección de barril de temporada 500ml<br>
+              <span class="precio">$180 MXN</span></p>
+          </article>
+        </section>
+
+        <!-- Postres -->
+        <section id="Postres" class="menu-section">
+          <article class="menu-item">
+            <h3>Brownie de Oro</h3>
+            <img src="Imagenes/Brownies.png" alt="Brownies" class="comida">
+            <p>Con oro comestible 24k y helado de vainilla<br>
+              <span class="precio">$450 MXN</span></p>
+          </article>
+          <article class="menu-item">
+            <h3>Pastel Imperial</h3>
+            <img src="Imagenes/Pastel de chocolate.png" alt="Pastel" class="comida">
+            <p>7 capas de chocolate belga Valrhona<br>
+              <span class="precio">$520 MXN</span></p>
+          </article>
+          <article class="menu-item">
+            <h3>Pay Diamante</h3>
+            <img src="Imagenes/Pay de limón.png" alt="Pay de Limón" class="comida">
+            <p>Merengue italiano y ralladura de limón Meyer<br>
+              <span class="precio">$480 MXN</span></p>
+          </article>
+        </section>
+      </div>
+    </main>
+    <footer>
+      <article>
+        <img src="Imagenes/Logo[Recuperado].svg" alt="Logotipo" />
+      </article>
+      <article>
+        <a href="reservaciones.html" class="reservaciones-link">Reservaciones</a>
+      </article>
+      <article>
+        <p>Diego’s Fire Pit Derechos Reservados ®</p>
+      </article>
+      <article class="social-media">
+        <a href="https://www.facebook.com" target="_blank">
+          <i class="fa fa-facebook"></i>
+        </a>
+        <a href="https://www.twitter.com" target="_blank">
+          <i class="fa fa-twitter"></i>
+        </a>
+        <a href="https://www.instagram.com" target="_blank">
+          <i class="fa fa-instagram"></i>
+        </a>
+        <a href="https://www.youtube.com" target="_blank">
+          <i class="fa fa-youtube"></i>
+        </a>
+      </article>
+    </footer>
+    <script src="javascriptAboutUs.js"></script>
+  </body>
+</html>
